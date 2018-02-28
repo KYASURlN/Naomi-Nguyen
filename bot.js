@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.reply('pong');
   	}
     if (message.content === 'tomo is gay') {
-    	message.reply('A-Ah! Dung Roi!');
+    	message.reply('A-Ah! Đúng rồi!');
   	}
 });
 
