@@ -5,16 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-const responseObject = {
-  "ping": "P-Pong!!",
-  "I LOVE NAOMI": "I-I love you, too!",
-  "lol": "roflmaotntpmp"
-};
-
-client.on("message", (message) => {
-  if(responseObject[message.content]) {
-    message.channel.send(responseObject[message.content]);
-  }
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('pong');
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
