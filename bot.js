@@ -8,6 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
+    	message.reply('ding dong');
   	}
     if (message.content === 'tomo is gay') {
     	message.reply('A-Ah! Đúng rồi!');
