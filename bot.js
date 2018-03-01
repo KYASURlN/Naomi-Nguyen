@@ -15,6 +15,9 @@ client.on('message', message => {
     if (message.content.toLowerCase() === 'peter is gay') {
         message.channel.sendMessage('There is no mistaking this.');
         }
+    if (message.content.toLowerCase() === 'rya has weird nostrils') {
+        message.channel.sendMessage('AGREED');
+        }
 });
 
 // THIS  MUST  BE  THIS  WAY
