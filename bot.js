@@ -12,7 +12,11 @@ client.on('message', message => {
     if (message.content.toLowerCase() === 'tomo is gay') {
         message.channel.sendMessage('A-Ah! Đúng rồi!');
         }
+    if (message.content.toLowerCase() === 'peter is gay') {
+        message.channel.sendMessage('There is no mistaking this.');
+        }
 });
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
+9
