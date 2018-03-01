@@ -6,10 +6,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content.ToLower() === 'ping') {
+    if (message.content === 'ping') {
         message.channel.send('P-Pong!');
         }
-    if (message.content.ToLower() === 'tomo is gay') {
+    if (message.content === 'tomo is gay') {
         message.channel.send('A-Ah! Đúng rồi!');
         }
 });
