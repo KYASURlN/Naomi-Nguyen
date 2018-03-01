@@ -7,10 +7,10 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('pong')('ding dong');
+    	message.channel.send('pong');
   	}
     if (message.content === 'tomo is gay') {
-    	message.reply('A-Ah! Đúng rồi!');
+    	message.channel.send('A-Ah! Đúng rồi!');
   	}
 });
 
