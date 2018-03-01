@@ -6,10 +6,13 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
+    
+    msg = message.content.toLowerCase();
+    
+    if (msg.startsWith === 'ping') {
         message.channel.send('P-Pong!');
         }
-    if (message.content === 'tomo is gay') {
+    if (msg.startsWith === 'tomo is gay') {
         message.channel.send('A-Ah! Đúng rồi!');
         }
 });
